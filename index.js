@@ -55,7 +55,7 @@ const createCards = (numOfCards) => {
       currentData = i;
     }
     card.setAttribute('data', `${currentData}`);
-    card.innerHTML = `${currentData}`;
+    // card.innerHTML = `${currentData}`;
     // ev on cards
     card.addEventListener('click', (e) => {
       const cardy = e.currentTarget;
