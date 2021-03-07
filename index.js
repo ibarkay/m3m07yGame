@@ -1,12 +1,17 @@
 const cardContainer = document.querySelector('.card-container');
+const winz = document.querySelector('.winz');
+const losez = document.querySelector('.losez');
+
 const [smallBtn, mediumBtn, largeBtn] = document.querySelectorAll('button');
 let wins = 0;
+let loseesss = 0;
 let initalCardsNumbers = 0;
 const btnList = [smallBtn, mediumBtn, largeBtn];
 
 smallBtn.addEventListener('click', () => {
   initalCardsNumbers = 12;
   safe(12);
+  startTimer();
   for (const b of btnList) {
     b.classList.add('disapear');
   }
@@ -14,6 +19,7 @@ smallBtn.addEventListener('click', () => {
 mediumBtn.addEventListener('click', () => {
   initalCardsNumbers = 24;
   safe(24);
+  startTimer();
   for (const b of btnList) {
     b.classList.add('disapear');
   }
@@ -21,6 +27,7 @@ mediumBtn.addEventListener('click', () => {
 largeBtn.addEventListener('click', () => {
   initalCardsNumbers = 36;
   safe(36);
+  startTimer();
   for (const b of btnList) {
     b.classList.add('disapear');
   }
@@ -102,6 +109,7 @@ async function hideCards() {
     await card.classList.add('hide-card');
   }
 }
+// *COMP
 function tick() {
   if (currentCards[1]) {
     if (currentCards[0].getAttribute('data') === currentCards[1].getAttribute('data')) {
@@ -110,9 +118,12 @@ function tick() {
       }
       waitFortime();
       wins++;
+      winz.innerHTML = wins;
       checkForWin();
     } else {
       waitFortime();
+      loseesss++;
+      losez.innerHTML = loseesss;
     }
   }
 }
