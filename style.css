@@ -1,6 +1,11 @@
 body{
 	background: rgb(9, 9, 94);
 }
+button{
+	background: #c6c6c6;
+	width: 5rem;
+	height: 3rem;
+}
 .main {
 	
 	color: #c6c6c6;

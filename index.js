@@ -1,6 +1,11 @@
 const cardContainer = document.querySelector('.card-container');
 const winz = document.querySelector('.winz');
 const losez = document.querySelector('.losez');
+const reload = document.querySelector('.reload');
+
+reload.addEventListener('click', () => {
+  location.reload();
+});
 
 const [smallBtn, mediumBtn, largeBtn] = document.querySelectorAll('button');
 let wins = 0;
@@ -12,6 +17,7 @@ smallBtn.addEventListener('click', () => {
   initalCardsNumbers = 12;
   safe(12);
   startTimer();
+  reload.style.visibility = 'visible';
   for (const b of btnList) {
     b.classList.add('disapear');
   }
@@ -20,6 +26,7 @@ mediumBtn.addEventListener('click', () => {
   initalCardsNumbers = 24;
   safe(24);
   startTimer();
+  reload.style.visibility = 'visible';
   for (const b of btnList) {
     b.classList.add('disapear');
   }
@@ -28,6 +35,7 @@ largeBtn.addEventListener('click', () => {
   initalCardsNumbers = 36;
   safe(36);
   startTimer();
+  reload.style.visibility = 'visible';
   for (const b of btnList) {
     b.classList.add('disapear');
   }

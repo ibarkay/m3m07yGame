@@ -1,6 +1,6 @@
 let stopwatchInterval;
 let startTime;
-let passedTime = 0;
+const passedTime = 0;
 document.getElementById('stopwatch').innerText = '00:00:00';
 
 function startTimer() {
@@ -20,8 +20,3 @@ function startTimer() {
     document.getElementById('stopwatch').innerText = time;
   }, 10);
 }
-
-document.getElementById('stop-watch').addEventListener('click', (e) => {
-  clearInterval(stopwatchInterval);
-  passedTime += new Date(Date.now() - startTime).getTime();
-});
