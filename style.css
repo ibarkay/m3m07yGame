@@ -1,0 +1,103 @@
+body {
+	background: rgb(9, 9, 94);
+	color: #c6c6c6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	background: #c6c6c6;
+}
+.card-container {
+	width: 30vw;
+	height: 80vh;
+	display: grid;
+	grid-template-areas: "1fr 1fr 1fr 1fr 1fr 1fr";
+	grid-gap: 2px;
+}
+
+[data="0"] {
+	background: blue;
+	box-shadow: 5px 5px black;
+}
+[data="2"] {
+	background: green;
+	box-shadow: 5px 5px black;
+}
+[data="4"] {
+	background: purple;
+	box-shadow: 5px 5px black;
+}
+[data="6"] {
+	background: yellow;
+	box-shadow: 5px 5px black;
+}
+[data="8"] {
+	background: orange;
+	box-shadow: 5px 5px black;
+}
+[data="10"] {
+	background: red;
+	box-shadow: 5px 5px black;
+}
+[data="12"] {
+	background: rgb(0, 217, 255);
+	box-shadow: 5px 5px black;
+}
+[data="14"] {
+	background: rgb(21, 58, 21);
+	box-shadow: 5px 5px black;
+}
+[data="16"] {
+	background: rgb(252, 120, 252);
+	box-shadow: 5px 5px black;
+}
+[data="18"] {
+	background: rgb(75, 75, 37);
+	box-shadow: 5px 5px black;
+}
+[data="20"] {
+	background: rgb(4, 4, 5);
+	box-shadow: 5px 5px black;
+}
+[data="22"] {
+	background: rgb(54, 0, 0);
+	box-shadow: 5px 5px black;
+}
+[data="24"] {
+	background: rgb(219, 243, 207);
+	box-shadow: 5px 5px black;
+}
+[data="26"] {
+	background: rgb(34, 4, 59);
+	box-shadow: 5px 5px black;
+}
+[data="28"] {
+	background: rgb(108, 180, 13);
+	box-shadow: 5px 5px black;
+}
+[data="30"] {
+	background: yellow;
+	box-shadow: 5px 5px black;
+}
+[data="32"] {
+	background: rgb(87, 75, 52);
+	box-shadow: 5px 5px black;
+}
+[data="34"] {
+	background: #fd26cf;
+	box-shadow: 5px 5px black;
+}
+
+/* ! */
+.hide-card {
+	background: #c6c6c6;
+	box-shadow: 0px 0px black;
+}
+.disapear {
+	visibility: hidden;
+}
