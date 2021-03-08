@@ -5,26 +5,47 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./squares/sqursStyle.css">
 		<title>Memory Game</title>
 	</head>
 	<body>
-		<div class="main">
-			<h1>M3M073y 0.01v 🃏</h1>
-			<div class="wins">wins : <span class="winz"></span></div>
-			<div class="loses">loses : <span class="losez"></span></div>
-			<div id="watch">
-				<div id="stopwatch"></div>
+		<div class="context">
+			<div class="main">
+				<div class="scores"></div>
+				<h1>M3M073y 0.01v 🃏</h1>
+				<div class="wins">wins : <span class="winz"></span></div>
+				<div class="loses">loses : <span class="losez"></span></div>
+				<div id="watch">
+					<div id="stopwatch"></div>
+				</div>
+				<input type="text" name="name" placeholder="name" >
+				<div class="new-game">
+					<button class="small">Small</button>
+					<button class="medium">Medium</button>
+					<button class="larg">Large</button>
+				</div>
+				<div class="card-container"></div>
+				<button class="reload" style="visibility: hidden">Reload</button>
 			</div>
-			<div class="new-game">
-				<button class="small">Small</button>
-				<button class="medium">Medium</button>
-				<button class="larg">Large</button>
-			</div>
-			<div class="card-container"></div>
-			<button class="reload" style="visibility: hidden">Reload</button>
 		</div>
-
+		<div class="area">
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				
+			</ul>
+		</div>
+		<script src="./squares/squaresBackGround.js"></script>
 		<script src="./index.js"></script>
 		<script src="./watch.js"></script>
 	</body>
-</html>
+	</html>
+	

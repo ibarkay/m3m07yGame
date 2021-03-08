@@ -1,8 +1,7 @@
 body {
 	background: rgb(9, 9, 94);
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	padding: 0;
-	margin: 0;
+
 }
 button {
 	background: #c6c6c6;
@@ -16,6 +15,7 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 0;
 }
 .card {
 	width: 5rem;
@@ -137,4 +137,7 @@ button {
 	.card-container {
 		grid-template-areas: "1fr 1fr 1fr 1fr ";
 	}
+}
+input {
+	text-align: center;
 }
